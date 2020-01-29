@@ -1,0 +1,1199 @@
+@charset "UFT-8";
+
+/* sprites ========================================================== */
+
+.sp{display: inline-block; background-image: url(../img/sprite-pc.png); background-repeat: no-repeat;}
+
+/* service icon- normal */
+.sp-ticket{width: 90px; height: 90px; background-position: 0px 0px;}
+.sp-route{width: 90px; height: 90px; background-position: -90px 0px;}
+.sp-accommodations{width: 90px; height: 90px; background-position: -180px 0px;}
+.sp-qna{width: 90px; height: 90px; background-position: -270px 0px;}
+.sp-map{width: 90px; height: 90px; background-position: -360px 0px;}
+.sp-schedule{width: 90px; height: 90px; background-position: 0px -90px;}
+.sp-tour{width: 90px; height: 90px; background-position: -90px -90px;}
+/* service icon - hover */
+.sp-ticket-w{width: 90px; height: 90px; background-position: 0px -180px;}
+.sp-route-w{width: 90px; height: 90px; background-position: -90px -180px;}
+.sp-accommodations-w{width: 90px; height: 90px; background-position: -180px -180px;}
+.sp-qna-w{width: 90px; height: 90px; background-position: -270px -180px;}
+.sp-map-w{width: 90px; height: 90px; background-position: -360px -180px;}
+.sp-schedule-w{width: 90px; height: 90px; background-position: 0px -270px;}
+.sp-tour-w{width: 90px; height: 90px; background-position: -90px -270px;}
+/* language */
+.sp-korean{width: 30px; height: 30px; background-position: -180px -90px;}
+.sp-english{width: 30px; height: 30px; background-position: -210px -90px;}
+.sp-japanese{width: 30px; height: 30px; background-position: -240px -90px;}
+.sp-chinese{width: 30px; height: 30px; background-position: -270px -90px;}
+/* etc.... */
+.sp-instagram{width: 50px; height: 50px; background-position: -180px -120px;}
+.sp-naverblog{width: 50px; height: 50px; background-position: -230px -120px;}
+.sp-firebugleft{width: 80px; height: 80px; background-position: 0px -360px;}
+.sp-firebugright{width: 80px; height: 80px; background-position: -80px -360px;}
+.sp-noticelogo{width: 210px; height: 80px; background-position: -180px -270px;}
+
+/*
+
+미디어쿼리
+1280px 따로 제작할 것
+
+메뉴 width100%로 적용해서
+hover 배경 나타나게 하기
+모바일 메뉴 변경 생각하기
+
+팝업 페이지 제작
+(로그인 페이지(bg 투명도 들어간 검정 배경화, 유저 페이지)
+
+슬라이드 플러그인 넣기
+1페이지 3단,
+낮/밤 나눠서 탭으로 할건지 
+낮/밤 상하 배치해서 그대로 갈건지
+
+동영상 태블릿 모드때 어떻게 배치할지
+생각해보기
+위에 영상 밑에 가로로 긴 포스터 넣어도 되긴 함
+
+js 효과 넣을 것
+
+1. 상단 공지 마우스 휠 내릴시 바로 사라지고/나타나게 하기
+2. 홍보 페이지 반딧불 불빛 효과 나타나게 하기
+범위(acticle1~2)
+3. 축제 프로그램 슬라이드 효과/ 탭효과
+4. 축제 서비스 마우스 hover시 아이콘 커지거나, 밝은 색 아이콘으로 변경되게 하기
+5. SNS 마우스 클릭시 팝업 뜨며, 인스타그램 이동되는 링크를 뜨게 할까 생각 좀 해봐야겠음
+
+*/
+
+/* firefly */
+#firefly1, #firefly2{
+    overflow: hidden;
+    position: absolute;
+    top:0; 
+    right:0; 
+    bottom:0; 
+    left:0;
+    z-index: 100;
+    pointer-events: none;
+}
+
+/* 상단 공지 ========================================================== */
+
+.top-notice{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+}
+.top-notice .center{
+    height: 100%;
+}
+.top-notice .center h2{
+    float: left;
+    display: inline-block;
+    margin: 10px 0 0 50px;
+}
+.top-notice p{
+    float: left;
+    margin: 31px 0 0 50px;
+}
+.top-notice p span{
+    display: block;
+    text-align: center;
+}
+.top-notice h3{
+    position: absolute;
+    left: 50%;
+    margin-top: 24px;
+    transform: translateX(-50%);
+    font-size: 24px;
+}
+.top-notice h3 span{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+.top-notice button{
+    float: right;
+    width: 120px;
+    height: 40px;
+    margin: 33px 60px 25px 0;
+    background: #89c240;
+    color: #fff;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* 네비게이션 ================================================================= */
+header h1{
+    position: absolute;
+    z-index: 100;
+    display: inline-block;
+    padding-left : 40px;
+    line-height: 160px;
+    width: 150px;
+}
+
+header h1 img{width: 100%;}
+
+header .menu-btn{
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 24px;
+}
+header .menu-btn i{
+    font-size: 2.5em;
+}
+header .m-user-btn{
+    display: none;
+}
+nav{
+    position: relative;
+    max-width: 1280px;
+    height: 120px;
+    margin: auto;
+}
+
+nav .nav-text{
+    display: none;
+    position: absolute;
+    z-index: 100;
+    left: -10px; top: 125px;
+    width: 200px; height: 220px;
+    border-right:1px solid #c4c3bf;
+    padding-right: 20px;
+}
+nav .nav-text p{
+    color: #231916;
+    opacity: 0.7;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 300;
+}
+nav .nav-text p:nth-child(1){
+    padding-bottom: 10px;
+}
+nav .nav-text p span{
+    display: block;
+}
+
+.gnb{
+    z-index: 100;
+    width: 770px;
+    left: 220px;
+    position: absolute;
+    display: inline-block;
+    padding-top: 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: height 1s;
+}
+.gnb>li{
+    float: left;
+    /* width: 200px; height: 80px; */
+    background: url(../img/nav_line_bg.gif) no-repeat right 18px;
+}
+.gnb>li:last-child{
+    background: none;
+}
+.gnb>li>a{
+    display: block;
+    padding: 16px 40px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.gnb>li:hover>a{
+    font-weight: 700;
+}
+.gnb li:hover ul li a{
+    transition: color 0.2s;
+}
+.sub li a:hover{
+    color: #89c240;
+}
+.gnb:hover>li>a{
+    color: #231916;
+    opacity: 0.7;
+    transition: color 0.2s;
+}
+.gnb .sub{
+    overflow: hidden;
+    height: 0;
+    padding-top: 25px;
+    transition: height 0.4s;
+}
+
+.gnb:hover .sub{
+    height: 250px;
+}
+
+.gnb .sub li a{
+    display: block;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.gnb .sub li:hover a{
+    font-weight: 500;
+    opacity: 1;
+}
+
+.gnb-bg{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    height: 400px;
+    border-bottom: 2px solid transparent;
+    transition: height 0.3s border-bottom 0.3s;
+    background: #fff;
+}
+
+/* 네비게이션 - 오른쪽 */
+.nav-right{
+    z-index: 100;
+    position: absolute;
+    right: 30px;
+    top: -16px;
+}
+
+.lang{
+    /* overflow: hidden; */
+    float: left;
+    width: 120px;
+    height: 32px;
+    margin-top: 60px;
+    background: #231916;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.lang a{
+    position: relative;
+    display: block;
+    height: 32px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+.lang > a{
+    overflow: hidden;
+}
+.lang a > i{
+    position: absolute;
+    right: 9px;
+    top: 7px;
+}
+.lang > a > span{
+    float: left;
+}
+.lang a span i{
+    width: 30px;
+    height: 30px;
+    margin: 0 9px;
+    line-height: 30px;
+    text-align: center;
+}
+.lang ul{
+    display: none;
+    background: #231916;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+.lang ul li{
+    width: 116px; height: 40px;
+    color: #fff;
+    font-size: 22px;
+}
+.lang ul li:hover{
+    background: rgba(255,255,255,0.1);
+}
+.lang ul li a span{
+    margin:0 15px 0 5px;
+    vertical-align: text-bottom;
+    box-sizing: border-box;
+}
+
+.nav-right .user_btn{
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 60px 0 0 5px;
+    background: #231916;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.nav-right .user_btn i{
+    color: #fff;
+    font-size: 1.3em;
+}
+/* 모바일 언어 */
+
+.nav-lang-t{
+    display: none;
+}
+
+/* 로그인 팝업 */
+.user-login-popup{
+    display: none;
+    z-index:200;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #ccc;
+}
+.user-login-popup div.login{
+    display: block;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left:50%; top:50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    text-align: center;
+}
+
+.user-login-popup div.login .btn-login-close{
+    position: absolute;
+    top: 10px;
+    right: 18px;
+}
+
+.user-login-popup div.login .btn-login-close i{
+    font-size: 2.5em;
+}
+
+.user-login-popup h2{
+    padding: 50px 0 20px;
+    font-size: 28px;
+}
+.user-login-popup h3{
+    padding-bottom: 10px;
+    font-size:20px;
+}
+.user-login-popup p{
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+.user-login-popup p span{display: block;}
+.login-form{}
+.login-form::after{
+    content: '';
+    display: block;
+    margin: 30px auto 0;
+    width: 400px;
+    height: 1px;
+    background: #777777;
+}
+.login-form input{
+    display: block;
+    margin: 0 0 4px 160px;
+    width: 280px;
+    height: 40px;
+    border: 1px solid #777;
+    border-radius:6px;
+    text-indent: 10px;
+    box-sizing: border-box;
+}
+.btn-login{
+    margin-top: 16px;
+    width: 280px;
+    height: 40px;
+    background: #89c240;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn-login-naver{
+    display: block;
+    margin: 30px 0 0 160px;
+    width: 280px;
+    height: 40px;
+    background: #42d21a;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.btn-login-naver>span{
+    display: inline-block;
+    padding-right: 16px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+}
+.btn-login-kakao{
+    position: absolute;
+    display: block;
+    margin: 6px 0 0 160px;
+    width: 280px;
+    height: 40px;
+    padding-left: 36px;
+    background: #fde000;
+    color: #000;
+    font-weight: 700;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.btn-login-kakao i{
+    position: absolute;
+    left: 22px;
+    font-size: 1.5em;
+    color: #000;
+    margin-left: 13px;
+}
+/* article1 main */
+
+.article1{
+    position: relative;
+    overflow: hidden;
+}
+
+.article1-center{
+    max-width: 1920px;
+    margin: auto;
+}
+.article1 .main-post{
+    float: right;
+    max-width: 33.33%;
+}
+.article1 .main-post img{
+    width: 100%;
+    vertical-align: top;
+}
+.article1 .main-post img.tablet{
+    display: none;
+} 
+.article1 .main-post img.not-tablet{
+    display: block;
+}
+
+.article1 .main-video{
+    position: relative;
+    float: left;
+    max-width: 66.66%;
+}
+
+.article1 .main-video video{
+    max-width: 100%;
+}
+.article1 .main-video button{
+    z-index: 100;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.article1 .main-video button i{
+    font-size: 8em;
+    color:#fff;
+    opacity: 0;
+    transition: 0.5s;
+}
+.article1 .main-video:hover button i{
+    opacity: 0.2;
+}
+.article1 .main-video button:hover i{
+    opacity: 0.7;
+}
+
+.article1::after{
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 250px;
+    background: url(../img/덕유산.png) bottom left;
+    background-size: cover;
+}
+.article1 .mobile-scroll{
+    display: none;
+}
+
+/* article2 */
+
+.article2{
+    color: #fff;
+    background: url(../img/sec_bg.jpg) no-repeat fixed center;
+    background-size: cover;
+    background-position-x: 100%;
+}
+
+.article2::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+}
+.article2 .center {
+    padding-bottom: 30px;
+}
+.article2 .notice{
+    position: absolute;
+    overflow: hidden;
+    width: 100%; height: 50px;
+    top: 25px;
+}
+.article2 .notice>span:first-child{
+    float: left;
+    display: inline-block;
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.article2 .notice>span:first-child i{
+    padding: 14px 0 0 9px;
+    color: #000;
+    font-size: 2em;
+}
+
+.article2 .notice span.notice-label{
+    display: inline-block;
+    width: 70px; height: 32px;
+    margin: 10px 20px 0 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 14px;
+    background: #89c240;
+}
+
+.article2 .notice ul.notice-anounce{
+    position: absolute;
+    left : 195px;
+    top: 0px;
+    overflow: hidden;
+    height: 50px;
+    width: 600px;
+}
+
+.article2 .notice ul.notice-anounce li{
+    float: left;
+}
+.article2 .notice ul.notice-anounce li p{
+    float: left;
+    color: #fff;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    width:420px;
+    text-overflow : ellipsis;
+}
+
+.article2 .notice ul.notice-anounce li p>span{
+    display: block;
+    color: #fff;
+    font-weight: 300;
+}
+
+.article2 .notice span.notice-date{
+    color: #fff;
+    float: left;
+    margin-left: 40px;
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.article2 .notice>a{
+    position: absolute;
+    left: 770px;
+}
+
+.article2 .notice a .notice-btn{
+    margin-left:4px;
+    line-height: 50px;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.article2 .notice a:hover .notice-btn{
+   animation: small-big 1.2s linear infinite;
+}
+@keyframes small-big{
+    from,to{color: rgba(255, 255, 255, 0.5); font-size: 2.5em;}
+    50%{color: rgba(255, 255, 255, 1); font-size: 2.8em;}
+}
+
+.article2 .notice .reserve{
+    position: absolute;
+    top: 0px; right: 30px;
+}
+.article2 .notice .reserve span:hover{
+    animation: color-size 1.2s linear infinite;
+}
+.article2 .notice .reserve span:hover+i{
+    animation: color 1.2s linear infinite;
+}
+
+@keyframes color-size{
+    from,to{color: #fff; font-size: 18px;}
+    50%{color: #89c240; font-size: 19px;}
+}
+@keyframes color{
+    from,to{color: #fff; transform: scale(1);}
+    50%{color: #89c240;transform: scale(1.2);}
+}
+
+.article2 .notice .reserve::before{
+    content: '';
+    position: absolute;
+    right: 328px;
+    display: block;
+    width: 1px; height: 50px;
+    background: rgb(155, 155, 155);
+}
+.article2 .notice .reserve a{
+    line-height: 50px;
+}
+.article2 .notice .reserve a span{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+}
+.article2 .notice .reserve a i{
+    padding-left: 20px;
+    vertical-align: sub;
+    font-size: 2em;
+    color: #fff;
+}
+.article2 .service{
+    padding-top:70px;
+}
+.article2 .service h2{
+    padding-top: 100px;
+    color:#fff;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 0 0 4px #fff;
+}
+.article2 .service ul{
+    z-index: 50;
+    overflow: hidden;
+    max-width: 1230px;
+    margin: auto;
+    padding: 50px 0 40px 0;
+}
+.article2 .service ul li{
+    float: left;
+    width: 14.28%;
+    text-align: center;
+}
+.article2 .service ul li:hover{
+    animation: up-down 1s linear infinite;
+}
+
+@keyframes up-down{
+    from,to{margin-top: 0;}
+    50%{margin-top:-15px}
+}
+
+.article2 .service ul li a{
+    display: block;
+}
+
+.article2 .service ul li:nth-child(3) a{
+    text-align: center;
+}
+
+.article2 .service ul li a>span:nth-child(2){
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.4;
+}
+.article2 .service ul li a>span:nth-child(1){
+    opacity: 0.3;
+}
+.article2 .service ul li:hover a>span:nth-child(1){
+    opacity: 1;
+}
+
+.article2 .service ul li:hover a>span:nth-child(2){
+    opacity: 1;
+}
+/* 축제 간략 소개 */
+/* .middle-notice{
+    width: 100%;
+    height: 150px;
+    background: #fff;
+}
+.middle-notice .center{
+    height: 150px;
+}
+.middle-notice .center::after{
+    content: '';
+    position: absolute;
+    width: 185px; height: 45px;
+    bottom: -44px; left: 50%; transform: translateX(-50%);
+    display: block;
+    background: url(../img/article_arr.png) center center no-repeat;
+} */
+
+/* article3 */
+
+.article3{
+    width: 100%;
+    height: 1200px;
+    background: url(../img/program-pc.png) no-repeat bottom;
+    background-size: cover;
+}
+
+.article3 .center h2{
+    padding-top: 80px;
+    text-align: center;
+    color: #231916;
+    font-size: 36px;
+    text-shadow: 0 0 4px #fff;
+}
+.article3 .center>p{
+    display: none;
+}
+
+.article3 h2 span{
+    margin: 0 20px;
+}
+
+.program-am, .program-pm{
+    overflow: hidden;
+    position: relative;
+    width: 100%; height: 100%;
+  }
+.program-am{
+    margin-top: 50px;
+}
+.program-pm{
+    margin-top: 120px;
+}
+.swiper-slide {
+    height: 340px;
+    text-align: center;
+    position: relative;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #89c240;
+    font-weight: 900;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 7px;
+}
+.swiper-pagination-bullet{
+    width: 12px; height: 12px;
+}
+.swiper-pagination-bullet-active{
+    background: #89c240;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0;
+}
+.swiper-slide a{
+    display: block;
+    max-width: 260px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.swiper-slide a > div:nth-child(1){
+    overflow: hidden;
+}
+
+.swiper-slide a:hover div img{transform: scale(1.15); transition: transform 1.2s;}
+
+.program-pm .swiper-slide{
+    width: 33.33%;
+}
+.program-am a img, .program-pm a img{display: block;width: 100%;}
+.program-am a>div:nth-child(2){
+    height: 80px;
+    background: rgba(255,255,255,0.5);
+}
+.program-pm a>div:nth-child(2){
+    height: 80px;
+    background: rgba(0,0,0,0.5);
+}
+.program-am a div:nth-child(2) .textbox, .program-pm a div:nth-child(2) .textbox{
+    position: absolute;
+    width: 210px; height: 100px;
+    bottom:30px; left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    text-align: center;
+}
+.program-am a:hover div:nth-child(2) .textbox, .program-pm a:hover div:nth-child(2) .textbox{
+    animation: up-down 1s linear infinite;
+}
+.textbox h3{
+    padding: 4px 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #e96194;
+}
+.pg-2p .textbox h3{
+    color:#89c3ff;
+}
+
+.program-pm .textbox h3{
+    color: #89c240;
+}
+.textbox p{font-size: 12px;}
+.program-am .am-1 .textbox p{font-size: 14px;}
+.textbox p span{
+    display: block;
+}
+
+/* article4 */
+
+.article4{
+    width: 100%; height: 250px;
+    background: url(../img/planer_bg.png) fixed center;
+    background-size: cover;
+}
+
+.article4 .center{
+    overflow: hidden;
+}
+
+.article4 .center div{
+    float: left;
+    padding: 60px 40px 0
+}
+.article4 .center div span{
+    margin-left: 20px;
+}
+.article4 div h3{
+    color: #e1e1e1;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.article4 ul{
+    overflow: hidden;
+}
+.article4 ul li::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 1px;
+    height: 120px;
+    top: 70px;
+    right: 0;
+    background: #e1e1e1;
+    opacity: 0.5;
+}
+
+.article4 ul li{
+    position: relative;
+    float: left;
+    padding: 90px 10px;
+    text-align: center;
+    width: 220px; height: 120px;
+}
+.article4 ul li:last-child{
+    padding-right: 0;
+}
+.article4 ul li:nth-child(1){
+    right: 2px;
+}
+.article4 ul li:nth-child(3){
+    right: 1px;
+}
+.article4 ul li:last-child::after{
+    display: none;
+}
+
+.article4 ul li p{
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #e1e1e1;
+    font-weight: 700;
+}
+
+.article4 ul li span{
+    display: block;
+    font-size: 14px;
+    color: #e1e1e1;
+    font-weight: 300;
+}
+
+/* article5 */
+
+.article5{
+    background: url(../img/sns-bg.jpg) bottom no-repeat;
+    background-size: cover;
+}
+.article5 .center{
+    overflow: hidden;
+    padding-top: 100px;
+    max-width: 1178px;
+}
+.article5 .insta{
+    float: left;
+    width: 270px; height: 440px;
+    background: #e96093;
+    margin: 0 4px;
+}
+
+.article5>.center>ul{
+    float: left;
+    overflow: hidden;
+    width: 900px;
+}
+
+.article5>.center>ul>li {
+    float: left;
+    padding: 1px 4px;
+    width: 24%; height: 50%;
+}
+.article5>.center>ul>li.insta-top{
+    padding-top: 0;
+}
+
+.article5>.center>ul>li.insta-bottom{
+    padding-bottom: 0;
+}
+
+.article5>.center>ul>li a{
+    display: block;
+    overflow: hidden;
+    margin-bottom: 5px;
+    width: 216px; height: 216px;
+}
+
+.article5>.center>ul>li>a img{
+    display: inline-block;
+    width: 100%;
+}
+.article5>.center>ul>li>a:hover img{
+    transform: scale(1.15); transition: transform 1.2s;
+}
+
+.article5 .insta>span{
+    margin: 30px 30px 0;
+}
+
+.article5 .insta h3{
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+.article5 .insta p{
+    padding: 70px 30px;
+    color: #fff;
+    font-size: 20px;
+}
+.article5 .insta p>span{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+.article5 .sns-btn{
+    width: 120px; height: 40px;
+    margin-left: 120px;
+    background: #fff;
+    border-radius: 6px;
+    color: #e96093;
+    font-size:18px;
+}
+
+
+.article5 .sns-btn:hover{
+    animation: up-down 0.7s linear infinite;
+}
+
+.article5 .sns-btn i{
+    font-size: 1.3em;
+    padding-left: 8px;
+    vertical-align: text-top;
+}
+
+.article5 h2{
+    clear: both;
+    padding: 50px 0;
+    text-align: center;
+    color: #231916;
+    font-size: 24px;
+    text-shadow: 0 0 4px #fff;
+}
+
+/* banner */
+
+.article5 .banner{
+    position: relative;
+    height: 40px;
+    padding-bottom: 100px;
+}
+.article5 .banner .wrap{
+    width: 702px; margin: auto;
+    overflow: hidden;
+}
+
+.article5 .banner .wrap ul{
+    width: 3042px;
+    height: 40px;
+    overflow: hidden;
+    animation : banner 25s linear infinite;
+}
+.article5 .banner .wrap ul li{float: left; padding-right: 50px;}
+.article5 .banner .wrap ul li a{display: block;}
+.article5 .banner .wrap ul li img{display: block; width: 184px; height: 40px;}
+
+@keyframes banner{
+    0%{margin-left: 0;}
+    100%{margin-left:-2574px}
+}
+
+/* top button */
+button.btn-top{
+    position: absolute;
+    right: 30px;
+    margin-top: -90px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #231916;
+    opacity: 0.7;
+}
+button.btn-top i{
+    color: #fff;
+    display: block;
+    font-size: 1.8em;
+    margin-top: -5px;
+    height: 18px;
+}
+button.btn-top span{
+    color: #fff;
+    margin-top: -9px;
+}
+button.btn-top:hover{
+    animation: up-down-btn 0.8s linear infinite;
+}
+
+@keyframes up-down-btn{
+    from,to{margin-top: -90px;}
+    50%{margin-top:-100px}
+}
+
+
+
+/* footer */
+
+footer{
+    width: 100%; height: 300px;
+    background: url(../img/footer_bg.png) no-repeat fixed 0px 70px;
+    background-size: cover;
+}
+footer .center{
+    overflow: hidden;
+}
+footer .footer-left{
+    float: left;
+}
+footer .footer-left .footer-sns{
+    position: relative;
+    padding:40px 0 20px;
+}
+footer .footer-left .footer-sns a{
+    display: inline-block;
+}
+footer .footer-left .footer-sns a:hover .sp-instagram+div{
+    opacity: 1;
+}
+footer .footer-left .footer-sns a:hover .sp-naverblog+div{
+    opacity: 1;
+}
+footer .footer-left .footer-sns a span{
+    margin-right: 10px;
+}
+footer .footer-left .footer-sns a .sp-instagram+div{
+    opacity:0;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 30px;
+    top: 6px;
+    left: 4px;
+    background: #fe455b;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+}
+
+.sp-instagram+div::after{
+    content: '';
+    position: absolute;
+    border: 7px solid #000;
+    bottom: -7px;
+    left: 13px;
+    border-color: #fe455b transparent transparent transparent;
+    border-bottom: 0;
+}
+footer .footer-left .footer-sns a .sp-naverblog+div{
+    opacity:0;
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 30px;
+    top: 6px;
+    left: 66px;
+    background: #42d31a;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    line-height: 30px;
+}
+.sp-naverblog+div::after{
+    content: '';
+    position: absolute;
+    border: 7px solid #000;
+    bottom: -7px;
+    left: 13px;
+    border-color: #42d31a transparent transparent transparent;
+    border-bottom: 0;
+}
+footer .footer-left p{
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 400;
+}
+footer .footer-left small{
+    display: inline-block;
+    padding-top: 30px;
+    color: #e1e1e1;
+}
+footer .footer-right{
+    float: right;
+}
+footer .footer-right ul{
+    padding-top: 120px;
+}
+footer .footer-right ul li a{
+    display: block;
+    padding-bottom: 20px;
+    color: #e1e1e1;
+    font-size: 18px;
+    font-weight: 400;
+}
+

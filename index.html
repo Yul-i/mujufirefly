@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2019년 무주반딧불축제</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/mujufirefly.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="./js/jquery.firefly.js"></script>
+    <script src="./js/jquery.firefly2.js"></script>
+    <script src="js/mujufirefly.js"></script>
+</head>
+<body>
+    <div id="firefly1"></div>
+    <div id="firefly2"></div>
+    <aside class="top-notice" id="top">
+        <div class="center">
+            <h2 id="aside_logo"><span class="sp sp-noticelogo"></span></h2>
+            <p>2019. 08. 31(토) <span>~ 09. 08(토)</span></p>
+            <h3>
+                <span>"신비한 반딧불이의 비행과 군무를 체험하는 인기 프로그램"</span>
+                반딧불이 신비탐사 인터넷 사전접수
+            </h3>
+            <button class="aside-btn">바로가기</button>
+        </div>
+    </aside>
+    <header>
+        <button class="menu-btn"><i class="material-icons">menu</i></button>
+        <h1><img src="img/logo_white.png" alt="무주반딧불축제"></h1>
+        <button class="m-user-btn"><i class="fas fa-user"></i></button>
+        <nav>
+            <div class="nav-text">
+                <p>반디의 꿈,</p>
+                <p>산골 생태도시<span>무주 이야기</span></p>
+            </div>
+            <div class="center">
+                <ul class="gnb">
+                    <li>
+                        <a href="#">축제소개</a>
+                        <ul class="sub">
+                            <li><a href="#">축제소개</a></li>
+                            <li><a href="#">인삿말</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">축제정보</a>
+                        <ul class="sub">
+                            <li><a href="#">축제개요</a></li>
+                            <li><a href="#">참여안내</a></li>
+                            <li><a href="#">일정표</a></li>
+                            <li><a href="#">주요행사</a></li>
+                            <li><a href="#">부대행사</a></li>
+                            <li><a href="#">안내도</a></li>
+                            <li><a href="#">교통안내<span>&오시는길</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">반딧불이</a>
+                        <ul class="sub">
+                            <li><a href="#">반딧불 이야기</a></li>
+                            <li><a href="#">반딧불 구조</a></li>
+                            <li><a href="#">반딧불 한살이</a></li>
+                            <li><a href="#">반딧불 실화</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">커뮤니티</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">입찰정보</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">무주관광</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                <div class="lang">
+                    <a href="#"><span><i class="fas fa-globe"></i></span><span>KOR</span><i class="fas fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#"><span class="sp sp-korean"></span>KOR</a></li>
+                        <li><a href="#"><span class="sp sp-english"></span>ENG</a></li>
+                        <li><a href="#"><span class="sp sp-japanese"></span>JPN</a></li>
+                        <li><a href="#"><span class="sp sp-chinese"></span>CNA</a></li>
+                    </ul>
+                </div>
+                <button class="user_btn"><i class="fas fa-user"></i></button>
+            </div>
+            <div class="nav-lang-t">
+                <a href="#"><span class="sp sp-korean"><span class="blind">한국어</span></span></a>
+                <a href="#"><span class="sp sp-english"><span class="blind">영어</span></span></a>
+                <a href="#"><span class="sp sp-japanese"><span class="blind">일본어</span></span></a>
+                <a href="#"><span class="sp sp-chinese"><span class="blind">중국어</span></span></a>
+            </div>
+        </nav>
+        <!-- 배경 -->
+        <div class="gnb-bg"></div>
+    </header>
+    <!-- 로그인 팝업 -->
+
+    <div class="user-login-popup">
+        <div class="login">
+            <button class="btn-login-close"><i class="fas fa-times"></i></button>
+            <h2>로 그 인</h2>
+            <h3>2019 무주반딧불축제 회원님 환영합니다</h3>
+            <p>회원이 아니신 분들은 회원가입을 하시면<span>더 편리하게 이용하실 수 있습니다.</span></p>
+            <form class="login-form">
+                <input type="text" placeholder="아이디를 입력해주세요">
+                <input type="password" placeholder="비밀번호를 입력해주세요">
+                <button class="btn-login" type="submit" >로그인</button>
+            </form>
+            <div>
+                <button class="btn-login-naver" type="button"><span>N</span>네이버 아이디로 로그인</button>
+                <button class="btn-login-kakao" type="button"><i class="fas fa-comments"></i>카카오계정으로 로그인</button>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <!-- main 홍보 들어갈 곳 -->
+
+        <article class="article1">
+            <div class="article1-center">
+                <div class="main-post">
+                    <img src="img/main_post_t.jpg" alt="2019 무주 반딧불 축제 포스트" class="tablet">
+                    <img src="img/main_post.jpg" alt="2019 무주 반딧불 축제 포스트" class="not-tablet">
+                    <div class="mobile-scroll">
+                        <i class="fas fa-caret-down"></i>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="main-video">
+                    <video id="video" src="./img/2019_muju_firefly.mp4" autoplay muted loop><source src="source/movie.mp4" type="video/mp4" ></video>
+                    <button><i class="far fa-pause-circle"></i></button>
+                </div>
+            </div>
+        </article>
+        <!-- 축제 서비스 & 공지사항 등 안내 -->
+        
+        <article class="article2">
+            <div class="center">
+                <div class="notice">
+                    <span>
+                        <i class="fas fa-bullhorn"></i>
+                    </span>
+                    <span class="notice-label">행사</span>
+                    <ul class="notice-anounce">
+                        <li>
+                            <a href="#">
+                                <p>
+                                2019년 전국 반딧불동요제 본선 진출자 명단
+                                    <span>2019년 전국 반딧불동요제 예선결과를 공지합니다.</span>
+                                </p>
+                                <span class="notice-date">2019-08-26</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                제 23회 무주반딧불축제 경관조성 및 야간조명 사업
+                                <span>경관조성 및 야간조명 사업 제안공모 공고 결과발표</span>
+                                </p>
+                                <span class="notice-date">2019-07-18</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                제23회 무주반딧불축제 포스터 디자인 재공모전 실시
+                                <span>포스터 디자인 재 공모전을 진행합니다.</span>
+                                </p>
+                                <span class="notice-date">2019-04-08</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                제23회 무주반딧불축제 행사 대행사 선정 제안공모 공고
+                                <span>행사 대행사 선정을 위해 공고합니다</span>
+                                </p>
+                                <span class="notice-date">2019-03-25</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>
+                                제23회 무주반딧불축제 포스터 디자인 공모전
+                                <span>포스터 디자인 공모전을 진행하고자 하오니...</span>
+                                </p>
+                                <span class="notice-date">2019-03-11</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#"><i class="notice-btn material-icons">add_circle_outline</i></a>
+                    <div class="reserve">
+                        <a href="#"><span>체험 프로그램 사전 예약</span><i class="fas fa-caret-right"></i></a>
+                    </div>
+                </div>
+                <div class="service">
+                    <h2>축제 서비스</h2>
+                    <ul>
+                        <li><a href="#"><span class="sp sp-ticket-w"></span><span>입장안내</span></a></li>
+                        <li><a href="#"><span class="sp sp-schedule-w"></span><span>축제일정</span></a></li>
+                        <li><a href="#"><span class="sp sp-map-w"></span><span>행사장 안내도</span></a></li>
+                        <li><a href="#"><span class="sp sp-route-w"></span><span>오시는길</span></a></li>
+                        <li><a href="#"><span class="sp sp-tour-w"></span><span>무주관광</span></a></li>
+                        <li><a href="#"><span class="sp sp-accommodations-w"></span><span>숙박안내</span></a></li>
+                        <li><a href="#"><span class="sp sp-qna-w"></span><span>Q&A</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        
+        <!-- 축제 간략 소개 -->
+        <!-- <aside class="middle-notice">
+            <div class="center">
+                <h2><span class="sp sp-firebugleft"></span> 주요 축제 프로그램<span class="sp sp-firebugright"></span></h2>
+                <p></p>
+            </div>
+        </aside> -->
+
+        <article class="article3">
+            <div class="center">
+                <h2><span class="sp sp-firebugleft"></span> 주요 축제 프로그램<span class="sp sp-firebugright"></span></h2>
+                <p>프로그램을 클릭해주세요</p>
+
+
+                <!-- 낮 프로그램 -->
+                <div class="program-am swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide am-1 pg-1p">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_am1.jpg" alt="반디생태체험">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>반디생태체험</h3>
+                                        <p>
+                                            엄마 아빠와 함께 1박2일동안<span>무주 생태체험활동</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide pg-1p">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_am2.jpg" alt="반디나라관">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>반디나라 관</h3>
+                                        <p>
+                                            낮에도 살아있는 반딧불이를 볼 수 있고,<span>반딧불이의 생태를 이해하는</span><span>어린이 곤충체험공간</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide pg-1p">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_am3.jpg" alt="무주 팜 푸드존">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>무주 팜 푸드존</h3>
+                                        <p>
+                                            무주군 6개 읍·면 토속음식<span>문화복합공간</span><span>먹거리&공연 함께 즐기는 공간</span> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide pg-2p">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_am4.jpg" alt="반디생태체험">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>남대천 생명+</h3>
+                                        <p>
+                                            반딧불이 먹이인 토종다슬기와<span>물고기 치어를 남대천에 방류,</span><span>생명 살리기 프로젝트</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="swiper-slide pg-2p">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_am5.jpg" alt="반디생태체험">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>섶다리 공연</h3>
+                                        <p>
+                                            반딧불축제 명물로 미국 CNN이<span>한국의 아름다운 곳 50선 선정</span><span>섶다리를 무대로 무주 향토문화 재현</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide pg-2p">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_am6.jpg" alt="반디생태체험">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>남대천 피서존</h3>
+                                        <p>
+                                            남대천 그늘막 텐트 설치로<span>힐링 및 쉼터 공간 조성 제공</span><span>체험형 쉼터 조성</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div class="swiper-wrapper">
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <!-- 밤 프로그램 -->
+                <div class="program-pm">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_pm1.jpg" alt="반딧불이신비탐사">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>반딧불이신비탐사</h3>
+                                        <p>
+                                            반딧불이 축제 최고 인기 프로그램<span>반딧불이 서식지로 이동하여</span><span>반딧불이 비행과 군무 직접 체험</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_pm2.jpg" alt="반디별소풍">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>반디별소풍</h3>
+                                        <p>
+                                            청정자연 무주에서<span>천체과학 해설사의 설명을 들으며</span><span>별자리 찾는 신비로운 소풍</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div>
+                                    <img src="img/program_pm3.jpg" alt="낙화놀이">
+                                </div>
+                                <div>
+                                    <div class="textbox">
+                                        <h3>낙화놀이</h3>
+                                        <p>
+                                            여러가닥의 줄에서 흩날리는<span>불꽃비가 아름다운 전통 불꽃놀이</span><span>(도 무형문화재 제56호)</span> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        </article>
+        
+        <article class="article4">
+            <div class="center">
+                <div>
+                    <span class="sp sp-firebugright"></span>
+                    <h3>공연 일정</h3>
+                </div>
+                <ul>
+                    <li>
+                        <p>안성 낙화놀이</p>
+                        <span>8/31(토)9/1(일)9/6(금)9/7(토)</span><span>- 장소:남대천 일대</span>
+                    </li>
+                    <li>
+                        <p>섶다리 시연</p>
+                        <span>9/1(일)9/7(토)9/8(일)</span><span>- 장소:남대천 일대</span>
+                    </li>
+                    <li>
+                        <p>반딧불 동요제</p>
+                        <span>9/6(금)</span><span>- 장소:등나무 운동장(주 공연장)</span>
+                    </li>
+                    <li>
+                        <p>조선왕조실록 봉안 행렬</p>
+                        <span>9/7(토)</span><span>- 장소:남대천 일대</span>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        
+        <article class="article5">
+            <div class="center">
+                <div class="insta">
+                    <span class="sp sp-instagram"></span>
+                    <h3>@mujufirefly</h3>
+                    <p>무주반딧불축제를<span>SNS에서도</span><span>만나보세요.</span></p>
+                    <button class="sns-btn">바로가기<i class="fas fa-caret-right"></i></button>
+                </div>
+                <ul>
+                    <li class="insta-top"><a href="#"><img src="img/insta1.jpg" alt="반딧불이 신비탐사"></a></li>
+                    <li class="insta-top"><a href="#"><img src="img/insta2.jpg" alt="반디무대 ZONE"></a></li class="insta-top">
+                    <li class="insta-top"><a href="#"><img src="img/insta3.jpg" alt="반디별 소풍"></a></li class="insta-top">
+                    <li class="insta-top"><a href="#"><img src="img/insta4.jpg" alt="무주군 토속음식과 공연"></a></li class="insta-top">
+                    <li class="insta-bottom"><a href="#"><img src="img/insta5.jpg" alt="반딧불이 신비탐사 현장"></a></li class="insta-top">
+                    <li class="insta-bottom"><a href="#"><img src="img/insta6.jpg" alt="사랑도 낙화처럼 뜨겁게"></a></li class="insta-bottom">
+                    <li class="insta-bottom"><a href="#"><img src="img/insta7.jpg" alt="남대천 생명살리기 프로젝트"></a></li>
+                    <li class="insta-bottom"><a href="#"><img src="img/insta8.jpg" alt="숫자로보는 2019 무주 반딧불 축제"></a></li class="insta-bottom">
+                </ul>
+            </div>
+            <h2>후원 및 업무 협의 단체</h2>
+            <div class="banner">
+                <div class="wrap">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_1.gif" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_2.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_3.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_4.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_5.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_6.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_7.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_8.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_9.gif" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_10.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/banner_11.gif" alt="">
+                            </a>
+                        </li>
+                        <!-- 눈속임용 2개 준비 -->
+                        <li><img src="img/banner_1.gif" alt=""></li>
+                        <li><img src="img/banner_2.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <button class="btn-top"><a href="#top"><i class="fas fa-caret-up"></i><span>TOP</span></a></button>
+        </article>
+    </section> 
+    <footer>
+        <div class="center">
+            <div class="footer-left">
+                <div class="footer-sns">
+                    <a href="#">
+                        <span class="sp sp-instagram"></span>
+                        <div>Instagram</div>
+                    </a>
+                    <a href="#">
+                        <span class="sp sp-naverblog"></span>
+                        <div>NaverBlog</div>
+                    </a>
+                </div>
+                <p>
+                (사)무주반딧불축제제전위원회 <span>사업자등록번호 : 406-82-02314  대표자 : 진용훈</span> 
+                </p>
+                <p>
+                전북 무주군 무주읍 최북로 15 전통공예문화촌 1층 <span>무주반딧불축제제전위원회</span>
+                </p>
+                <p>
+                전화 : 063)324-2440(상담시간 : 10:00~17:00) <span>팩스 : 063)324-2441</span> 
+                </p>
+                <small>
+                COPYRIGHT (C) 2015 MUJU FIREFLY FESTIVAL ALL RIGHTS RESERVED.
+                </small>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#">·개인정보처리방침</a></li>
+                    <li><a href="#">·이메일무단수집거부</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

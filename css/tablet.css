@@ -1,0 +1,425 @@
+@charset "UFT-8";
+body{background: #fff;}
+
+.center {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+/* 상단 공지 */
+.top-notice{
+    display: none;
+}
+
+/* 네비게이션 */
+
+header{
+    height: 80px;
+    max-width: 1200px;
+}
+header .menu-btn{
+    z-index: 250;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 24px;
+}
+
+nav {
+    z-index: 200;
+    display: none;
+    position: fixed;
+    left : -350px;
+    width: 350px;
+    height: 100%;
+    overflow-y: auto;
+    background: #89c240;
+    transition: left 0.5s;
+    -ms-overflow-style: none;
+}
+nav::-webkit-scrollbar {display:none;}
+nav .menu-btn{
+    display: block;
+}
+
+header button.menu-btn.active{
+    left: 310px;
+    color: #fff;
+}
+nav.active{
+    display: block;
+    left: 0;
+    transition: left 0.5s;
+}
+
+header h1 {
+    display: block;
+    line-height: 125px;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+header .m-user-btn{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 26px;
+}
+
+header .m-user-btn i{
+    font-size: 1.8em;
+    color: #231916;
+}
+
+.gnb{
+    /* display: none; */
+    overflow: initial;
+    width: 200px;
+    top: 50px;
+    left: 0px;
+    text-align: left;
+}
+.gnb>li{
+    background: none;
+}
+
+.gnb li{
+    display: inline-block;
+    float: none;
+}
+.gnb li a{
+    display: inline-block;
+}
+.gnb .sub{
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    right: -110px;
+}
+.gnb>li:nth-child(1){
+    padding-bottom: 40px;
+}
+.gnb>li:nth-child(1)>.sub{
+    top: 24px;
+}
+.gnb>li:nth-child(2){
+    padding-bottom: 160px;
+}
+.gnb>li:nth-child(2)>.sub{
+    top: 125px;
+}
+.gnb>li:nth-child(3){
+    padding-bottom: 70px;
+}
+.gnb>li:nth-child(3)>.sub{
+    top: 345px;
+}
+.gnb>li:nth-child(4){
+    padding-bottom: 40px;
+}
+.gnb>li:nth-child(4)>.sub{
+    top: 476px;
+}
+.gnb .sub>li{
+    width: 130px;
+    height: 30px;
+}
+.gnb .sub>li>a{
+    padding: 0;
+    color: #fff;
+}
+.gnb:hover .sub{
+    height: 100%;
+}
+.gnb:hover>li>a{
+    color: #fff;
+    opacity: 1;
+    transition: color 0.2s;
+}
+
+.nav-right{
+   display: none;
+}
+
+/* 태블릿~ 모바일용 언어 */
+
+.nav-lang-t{
+    display: inline-block;
+    width: 350px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.nav-lang-t a{
+    display: inline-block;
+    margin: 0 5px;
+}
+.nav-lang-t a:hover span.sp{
+    transform: scale(1.6);
+    transition: transform 0.7s;
+}
+.nav-lang-t a span.sp{
+    transform: scale(1.3);
+}
+.nav-lang-t::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 350px;
+    height: 1px;
+    top: 79px;
+    right: 0;
+    background: #e1e1e1;
+    opacity: 0.5;
+}
+
+/* 메인 홍보 */
+.article1 .main-post {
+    float: none;
+    max-width: 100%;
+}
+.article1 .main-post img.tablet{
+    display: block;
+}
+.article1 .main-post img.not-tablet{
+    display: none;
+}
+
+.article1 .main-video {
+    float: none;
+    max-width: 100%;
+}
+.article1 .main-video button i{
+    font-size: 6em;
+}
+/* article2 */
+.article2 .center {
+    padding-bottom: 80px;
+}
+.article2 .notice .reserve{
+    display: none;
+}
+.article2 .notice>span:first-child{
+    width: 40px;
+    height: 40px;
+}
+.article2 .notice>span:first-child i {
+    padding: 11px 0 0 9px;
+    font-size: 1.4em;
+}
+.article2 .notice span.notice-label {
+    margin: 10px 20px 0 30px;
+    width: 60px;
+    height: 28px;
+    font-size: 18px;
+}
+.article2 .notice>span:first-child {
+    margin: 5px 0 0 20px;
+}
+.article2 .notice span.notice-date{
+    display: none;
+}
+.article2 .notice {
+    max-width: 800px;
+    height: 100px;
+    margin: auto;
+}
+.article2 .notice a .notice-btn {
+    display: none;
+}
+/* 서비스 */
+.article2 .service{
+    padding-top: 100px;
+    height: 320px;
+}
+.article2 .service h2 {
+    padding-top: 50px;
+    font-size: 32px;
+}
+.article2 .service ul li a>span:nth-child(1) {
+    transform: scale(0.8);
+}
+.article2 .service ul li a>span:nth-child(2) {
+    font-size: 18px;
+}
+
+/* 프로그램 */
+.article3 {
+    height: 1040px;
+}
+.article3 .center h2 {
+    padding-top: 50px;
+    font-size: 32px;
+}
+.article3 h2 span {
+    margin: 0 20px;
+    transform: scale(0.7);
+    vertical-align: text-bottom;
+}
+.program-pm {
+    margin-top: 60px;
+}
+
+/* 공연안내 */
+.article4 {
+    height: 290px;
+}
+
+.article4 .center div {
+    float: none;
+    padding: 30px 0 15px;
+    text-align: center;
+}
+.article4 .center div span {
+    display: none;
+}
+
+.article4 div h3 {
+    font-size: 24px;
+}
+
+.article4 ul{
+    width: 520px;
+    margin: auto;
+}
+.article4 ul li {
+    padding: 10px 20px;
+    height: 70px;
+}
+.article4 ul li p {
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.article4 ul li span {
+    color: #e1e1e1;
+}
+.article4 ul li::after {
+    height: 145px;
+    top: 22px;
+    right: -3px;
+}
+.article4 ul li:nth-child(2)::after, .article4 ul li:nth-child(3)::after{
+    display: none;
+}
+
+/* sns */
+
+.article5 .insta {
+    float: none;
+    width: 520px;
+    height: 150px;
+    margin: 0 auto 5px;
+}
+
+.article5 .insta>span {
+    margin: 20px 5px 0 30px;
+}
+
+.article5 .insta h3 {
+    font-size: 24px;
+    padding-left: 30px;
+}
+
+.article5 .insta p {
+    float: right;
+    padding: 0;
+    margin : -77px 30px 0 0;
+    text-align: right;
+}
+.article5 .sns-btn {
+    display: none;
+}
+.article5>.center>ul {
+    width: 530px;
+    height: 100%;
+    margin: 0 auto;
+    float: none;
+}
+.article5>.center>ul>li {
+    width: 48%;
+}
+.article5>.center>ul>li a {
+    width: 258px;
+    height: 258px;
+}
+.article5 h2 {
+    padding:50px 0;
+}
+.article5 .banner .wrap {
+    width: 550px;
+}
+.article5 .banner {
+    padding-bottom: 60px;
+}
+
+
+/* footer */
+footer{
+    height: 260px;
+}
+
+footer .footer-left {
+    float: none;
+}
+
+footer .footer-left .footer-sns{
+    width: 160px;
+    margin: 30px auto 20px;
+    padding: 0;
+}
+
+footer .footer-left .footer-sns a span {
+    margin-right: 20px;
+}
+
+footer .footer-left .footer-sns a .sp-instagram+div{
+    width: 84px;
+    height: 22px;
+    top: -23px;
+    left: -39px;
+    font-weight: 500;
+    line-height: 19px;
+}
+footer .footer-left .footer-sns a .sp-instagram+div::after{
+    right: 14px;
+    left: initial;
+}
+footer .footer-left .footer-sns a .sp-naverblog+div {
+    width: 84px;
+    height: 22px;
+    top: -23px;
+    left: 78px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+footer .footer-left p {
+    font-size: 16px;
+    text-align: center;
+}
+
+footer .footer-left small {
+    display: block;
+    text-align: center;
+}
+footer .footer-right {
+    float: none;
+    position: absolute;
+    width: 310px;
+    top: 45px;
+    right: -20px;
+}
+footer .footer-right ul {
+  padding-top: 0px;
+}
+footer .footer-right ul li{
+    float: left;
+}
+footer .footer-right ul li a {
+    display: block;
+    padding-bottom: 0;
+    padding-right: 12px;
+    font-size: 15px;
+    color:rgba(255,255,255,0.7);
+}

@@ -1,0 +1,7 @@
+@charset "UFT-8";
+/* 300:light, 400:regular,500:medium,700:bold,900:black */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean');
+@import url(reset.css);
+@import url(common.css);
+@import url(tablet.css) (min-width:768px) and (max-width:1200px);
+@import url(mobile.css) (max-width:767px);

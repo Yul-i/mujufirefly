@@ -1,0 +1,61 @@
+방향키 (삼각형)
+<i class="fas fa-caret-left"></i>
+<i class="fas fa-caret-right"></i>
+<i class="fas fa-caret-up"></i>
+<i class="fas fa-caret-down"></i>
+방향 일시정지
+<i class="fas fa-pause"></i>
+
+슬라이드 화살표
+<i class="fas fa-chevron-right"></i>
+<i class="fas fa-chevron-left"></i>
+재생버튼
+<i class="far fa-play-circle"></i>
+일시정지버튼
+<i class="far fa-pause-circle"></i>
+다시재생
+<i class="fas fa-redo"></i>
+언어(지구본)
+<i class="fas fa-globe"></i>
+확성기
+<i class="fas fa-bullhorn"></i>
+마이페이지 +
+<i class="fas fa-plus"></i>
+
+로그인 자물쇠
+<i class="fas fa-lock"></i>
+닫기
+<i class="fas fa-times"></i>
+
+material design
++버튼
+<i class="material-icons">
+add_circle_outline
+</i>
+
+
+.sp-ticket{width: 90px; height: 90px; background-position: 0px 0px;}
+.sp-route{width: 90px; height: 90px; background-position: -90px 0px;}
+.sp-accommodations{width: 90px; height: 90px; background-position: -180px 0px;}
+.sp-qna{width: 90px; height: 90px; background-position: -270px 0px;}
+.sp-map{width: 90px; height: 90px; background-position: -360px 0px;}
+.sp-schedule{width: 90px; height: 90px; background-position: 0px -90px;}
+.sp-tour{width: 90px; height: 90px; background-position: -90px -90px;}
+
+.sp-ticket-w{width: 90px; height: 90px; background-position: 0px -180px;}
+.sp-route-w{width: 90px; height: 90px; background-position: -90px -180px;}
+.sp-accommodations-w{width: 90px; height: 90px; background-position: -180px -180px;}
+.sp-qna-w{width: 90px; height: 90px; background-position: -270px -180px;}
+.sp-map-w{width: 90px; height: 90px; background-position: -360px -180px;}
+.sp-schedule-w{width: 90px; height: 90px; background-position: 0px -270px;}
+.sp-tour-w{width: 90px; height: 90px; background-position: -90px -270px;}
+
+.sp-korean{width: 30px; height: 30px; background-position: -180px -90px;}
+.sp-english{width: 30px; height: 30px; background-position: -210px -90px;}
+.sp-japanese{width: 30px; height: 30px; background-position: -240px -90px;}
+.sp-chinese{width: 30px; height: 30px; background-position: -270px -90px;}
+.sp-instagram{width: 50px; height: 50px; background-position: -180px -120px;}
+.sp-naverblog{width: 50px; height: 50px; background-position: -230px -120px;}
+.sp-firebugleft{width: 80px; height: 80px; background-position: 0px -360px;}
+.sp-firebugright{width: 80px; height: 80px; background-position: -80px -360px;}
+.sp-noticelogo{width: 210px; height: 80px; background-position: -180px -270px;}

@@ -1,0 +1,700 @@
+@charset "UFT-8";
+body{background: #fff;}
+
+.center {
+    max-width: 767px;
+    margin: auto;
+    position: relative;
+}
+
+/* 상단 공지 */
+.top-notice{
+    display: none;
+}
+
+/* 네비게이션 */
+
+header{
+    height: 60px;
+    max-width: 767px;
+}
+header .menu-btn {
+    z-index: 250;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 14px;
+}
+
+nav {
+    z-index: 200;
+    display: none;
+    position: fixed;
+    left : -350px;
+    width: 350px;
+    height: 100%;
+    overflow-y: auto;
+    background: #89c240;
+    transition: left 0.5s;
+    -ms-overflow-style: none;
+}
+nav::-webkit-scrollbar {display:none;}
+nav .menu-btn{
+    display: block;
+}
+
+header button.menu-btn.active{
+    left: 310px;
+    color: #fff;
+}
+nav.active{
+    display: block;
+    left: 0;
+    transition: left 0.5s;
+}
+
+header h1 {
+    line-height: 80px;
+    width: 100px;
+    display: block;
+    left: 50%;
+    padding-left:0;
+    transform: translateX(-50%);
+}
+
+header .m-user-btn{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+
+header .m-user-btn i{
+    font-size: 1.8em;
+    color: #231916;
+}
+
+.gnb{
+    /* display: none; */
+    overflow: initial;
+    width: 200px;
+    top: 50px;
+    left: 0px;
+    text-align: left;
+}
+.gnb>li{
+    background: none;
+}
+
+.gnb li{
+    display: inline-block;
+    float: none;
+}
+.gnb li a{
+    display: inline-block;
+}
+.gnb .sub{
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    right: -110px;
+}
+.gnb>li:nth-child(1){
+    padding-bottom: 40px;
+}
+.gnb>li:nth-child(1)>.sub{
+    top: 24px;
+}
+.gnb>li:nth-child(2){
+    padding-bottom: 160px;
+}
+.gnb>li:nth-child(2)>.sub{
+    top: 125px;
+}
+.gnb>li:nth-child(3){
+    padding-bottom: 70px;
+}
+.gnb>li:nth-child(3)>.sub{
+    top: 345px;
+}
+.gnb>li:nth-child(4){
+    padding-bottom: 40px;
+}
+.gnb>li:nth-child(4)>.sub{
+    top: 476px;
+}
+.gnb .sub>li{
+    width: 130px;
+    height: 30px;
+}
+.gnb .sub>li>a{
+    padding: 0;
+    color: #fff;
+}
+.gnb:hover .sub{
+    height: 100%;
+}
+.gnb:hover>li>a{
+    color: #fff;
+    opacity: 1;
+    transition: color 0.2s;
+}
+
+.nav-right{
+   display: none;
+}
+
+/* 태블릿~ 모바일용 언어 */
+
+.nav-lang-t{
+    display: inline-block;
+    width: 350px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.nav-lang-t a{
+    display: inline-block;
+    margin: 0 5px;
+}
+.nav-lang-t a:hover span.sp{
+    transform: scale(1.6);
+    transition: transform 0.7s;
+}
+.nav-lang-t a span.sp{
+    transform: scale(1.3);
+}
+.nav-lang-t::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 350px;
+    height: 1px;
+    top: 79px;
+    right: 0;
+    background: #e1e1e1;
+    opacity: 0.5;
+}
+
+/* 로그인 팝업 */
+.user-login-popup{
+    display: none;
+    z-index:300;
+    top: -33px;
+    background:none;
+}
+.user-login-popup div.login{
+    width: 100%;
+    height: 100%;
+    left:0; top:0; right:0; bottom:0;
+    transform: none;
+}
+
+.user-login-popup div.login .btn-login-close{
+    top: 50px;
+    right: 20px;
+}
+
+.user-login-popup div.login .btn-login-close i{
+    font-size: 2em;
+}
+
+.user-login-popup h2{
+    padding: 80px 0 20px;
+    font-size: 24px;
+}
+.user-login-popup h3{
+    font-size:16px;
+}
+.user-login-popup p{
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+.user-login-popup p span{display: block;}
+.login-form{}
+.login-form::after{
+    margin: 20px auto 20px;
+    width: 280px;
+}
+.login-form input{
+    display: block;
+    margin: 5px auto;
+    width: 240px;
+    height: 36px;
+    font-size: 12px;
+}
+.btn-login{
+    margin-top: 16px;
+    width: 240px;
+    height: 36px;
+    font-size: 14px;
+}
+.btn-login-naver{
+    display: block;
+    margin: 0 auto;
+    width: 240px;
+    height: 36px;
+    font-size: 14px;
+}
+.btn-login-naver>span{
+    display: inline-block;
+    padding-right: 16px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+}
+.btn-login-kakao{
+    position: relative;
+    margin: 4px auto;
+    width: 240px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.btn-login-kakao i{
+    position: absolute;
+    left: 26px;
+    margin-top:-3px;
+    margin-left: 0;
+}
+
+/* 메인 홍보 */
+.article1 .main-post {
+    position: relative;
+    float: none;
+    max-width: 100%;
+}
+.article1 .main-video {
+    float: none;
+    max-width: 100%;
+}
+.article1 .main-video button i{
+    font-size: 4em;
+}
+.article1::after{
+    height: 100px;
+    background-position: bottom right;
+}
+.article1 .mobile-scroll{
+    position: absolute;
+    display: block;
+    color: #fff;
+    z-index: 50;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.article1 .mobile-scroll i{
+    font-size: 2em;
+}
+.article1 .mobile-scroll i:first-child{
+    display: block;
+    opacity: 0.9;
+    animation: color-first 1s linear infinite;
+}
+.article1 .mobile-scroll i:last-child{
+    opacity: 0.5;
+    animation: color-second 1s linear infinite;
+}
+
+@keyframes color-first{
+    from,to{opacity:0.9; margin-top:0;}
+    50%{opacity:0.5; margin-top:-10px;}
+}
+@keyframes color-second{
+    from,to{opacity:0.5; margin-top:0;}
+    50%{opacity:0.9; margin-top:-10px;}
+}
+
+/* article2 */
+.article2 .center {
+    padding-bottom: 60px;
+}
+.article2::before{
+    height: 60px;
+}
+.article2 .notice{
+    max-width: 767px;
+    top: 9px;
+    height: 40px;
+}
+.article2 .notice .reserve{
+    display: none;
+}
+.article2 .notice ul.notice-anounce {
+    left: 38px;
+    top: 0;
+    height: 40px;
+    max-width: 320px;
+}
+.article2 .notice ul.notice-anounce li a p{
+    font-size: 14px;
+    max-width:320px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.article2 .notice ul.notice-anounce li a p>span{
+    margin-top: -6px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.article2 .notice>span:first-child{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+}
+.article2 .notice>span:first-child i {
+    padding: 6px 0 0 5px;
+    font-size: 1em;
+}
+.article2 .notice span.notice-label {
+    display: none;
+}
+.article2 .notice span.notice-date{
+    display: none;
+}
+.article2 .notice a .notice-btn {
+    margin-left: -17px;
+}
+/* 서비스 */
+.article2 .service{
+    padding-top: 50px;
+    height: 430px;
+}
+.article2 .service h2 {
+    padding-top: 30px;
+    font-size: 28px;
+}
+.article2 .service ul{
+    max-width: 300px;
+}
+.article2 .service ul li a>span:nth-child(2){
+    opacity: 1;
+}
+.article2 .service ul li a>span:nth-child(1){
+    opacity: 1;
+}
+.article2 .service ul li {
+    width: 33.33%;
+}
+.article2 .service ul li:hover{
+    animation: none;
+}
+.article2 .service ul li:last-child{
+    padding-left: 33.33%;
+}
+.article2 .service ul li a>span:nth-child(1) {
+    transform: scale(0.6);
+}
+.article2 .service ul li a>span:nth-child(2) {
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.article2 .service ul li:hover{
+    animation: none;
+}
+
+/* 프로그램 */
+.article3 {
+    overflow: hidden;
+    height: 100%;
+    padding-bottom: 80px;
+}
+.article3 .center h2 {
+    padding-top: 30px;
+    font-size: 28px;
+}
+.article3 .center>p{
+    display: block;
+    text-align: center;
+    color: #89c240;
+    font-size: 16px;
+}
+.article3 h2 span {
+    display: none;
+}
+.program-am, .program-pm {
+    margin-top: 30px;
+}
+.program-am a>div:nth-child(2), .program-pm a>div:nth-child(2) {
+    height: 60px;
+}
+.program-am a div:nth-child(2) .textbox, .program-pm a div:nth-child(2) .textbox {
+        position: relative;
+        margin: -20px auto 0;
+        width: 152px;
+        height: 40px;
+        top: initial;
+        left: initial;
+        bottom: 0px;
+        transform: none;
+    }
+.program-am .textbox h3, .program-pm .textbox h3{
+    font-size: 18px;
+}
+.program-am .textbox p, .program-pm .textbox p {
+    display:none;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px;
+    width: 130px; height: 130px;
+    font-size: 12px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.8);
+}
+.swiper-pagination{
+    display: none;
+}
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.program-am, .program-pm{
+    overflow: inherit;
+    position: initial;
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper {
+    position: initial;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: inherit;
+    transition-property: none;
+    box-sizing: inherit;
+    transform: none;
+}
+
+.program-am .swiper-slide, .program-pm .swiper-slide{
+    float: left;
+    width: 50%;    
+}
+.program-am a:hover div:nth-child(2) .textbox, .program-pm a:hover div:nth-child(2) .textbox{
+    animation: none;
+}
+
+.program-pm div.swiper-slide:nth-child(3){
+    display: none;
+}
+
+/* 공연안내 */
+
+.article4 {
+    height: 480px;
+}
+
+.article4 .center div {
+    float: none;
+    padding: 30px 0 15px;
+    text-align: center;
+}
+.article4 .center div span {
+    display: none;
+}
+
+.article4 div h3 {
+    font-size: 24px;
+}
+.article4 div h3::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e1e1e1;
+    opacity: 0.5;
+}
+
+.article4 ul{
+    overflow: inherit;
+    max-width: 650px;
+    margin: auto;
+}
+.article4 ul li {
+    position: inherit;
+    float: none;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 220px;
+    height: 70px;
+}
+.article4 ul li p {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.article4 ul li span {
+    color: #e1e1e1;
+    font-size: 12px;
+}
+.article4 ul li::after {
+    height: 145px;
+    top: 22px;
+    right: -3px;
+}
+.article4 ul li:nth-child(2)::after, .article4 ul li:nth-child(3)::after{
+    display: none;
+}
+
+/* sns */
+.article5 {
+    background: url(../img/sns-bg.jpg) bottom left no-repeat;
+}
+.article5 .center {
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.article5 .insta {
+    float: none;
+    width: 362px;
+    height: 70px;
+    margin: 0 auto 4px;
+}
+
+.article5 .insta>span {
+    margin: 10px 5px 0 15px;
+    transform: scale(0.8);
+}
+
+.article5 .insta h3 {
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: top;
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+.article5 .insta p {
+    display: none;
+}
+.article5 .sns-btn {
+    display: none;
+}
+.article5>.center>ul {
+    width: 370px;
+    height: 100%;
+    margin: 0 auto;
+    float: none;
+}
+.article5>.center>ul>li {
+    width: 47%;
+    padding: 0px 5px;
+}
+.article5>.center>ul>li a {
+    width: 180px;
+    height: 180px;
+}
+.article5 h2 {
+    padding:30px 0;
+}
+.article5 .banner .wrap {
+    width: 320px;
+}
+.article5 .banner {
+    padding-bottom: 40px;
+    transform: scale(0.8);
+}
+
+/* 위로 가는 버튼 */
+
+button.btn-top {
+    right: 10px;
+    margin-top: -50px;
+    width: 35px;
+    height: 35px;
+}
+button.btn-top:hover{
+    animation: none;
+}
+button.btn-top i {
+    font-size: 1.6em;
+    margin-top: -6px;
+}
+button.btn-top span{
+    font-size: 12px;
+}
+
+
+
+/* footer */
+footer{
+    height: 270px;
+}
+footer .center{
+    overflow: inherit;
+}
+footer .footer-left {
+    float: none;
+}
+
+footer .footer-left .footer-sns{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90px;
+    margin: 0;
+    padding: 0;
+}
+footer .footer-left .footer-sns a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+footer .footer-left .footer-sns a span {
+    margin-right: 20px;
+    transform: scale(0.7);
+}
+footer .footer-left .footer-sns a:hover .sp-instagram+div{
+    display: none;
+}
+footer .footer-left .footer-sns a:hover .sp-instagram+div{
+    display: none;
+}
+footer .footer-left .footer-sns a .sp-instagram+div{
+    display: none;
+}
+footer .footer-left .footer-sns a .sp-naverblog+div {
+    display: none;
+}
+footer .footer-left p {
+    font-size: 12px;
+    text-align: center;
+}
+footer .footer-left p:nth-of-type(1){
+    padding-top: 40px;
+}
+footer .footer-left p span{
+    display: block;
+}
+
+footer .footer-left small {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+}
+footer .footer-right {
+   display: none;
+}
+footer .footer-right ul {
+  padding-top: 0px;
+}
+footer .footer-right ul li{
+    float: left;
+}
+footer .footer-right ul li a {
+    display: block;
+    padding-bottom: 0;
+    padding-right: 12px;
+    font-size: 15px;
+    color:rgba(255,255,255,0.7);
+}
