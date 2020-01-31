@@ -21,7 +21,9 @@
     <div id="firefly2"></div>
     <aside class="top-notice" id="top">
         <div class="center">
-            <h2 id="aside_logo"><span class="sp sp-noticelogo"></span></h2>
+            <h2 id="aside_logo">
+                <span class="sp sp-noticelogo"></span>
+            </h2>
             <p>2019. 08. 31(토) <span>~ 09. 08(토)</span></p>
             <h3>
                 <span>"신비한 반딧불이의 비행과 군무를 체험하는 인기 프로그램"</span>
@@ -32,7 +34,11 @@
     </aside>
     <header>
         <button class="menu-btn"><i class="material-icons">menu</i></button>
-        <h1><img src="img/logo_white.png" alt="무주반딧불축제"></h1>
+        <h1>
+            <a href="index.html">
+                <span class="sp sp-black-logo m-logo"></span>
+                <span class="sp sp-white-logo"></span>
+            </a></h1>
         <button class="m-user-btn"><i class="fas fa-user"></i></button>
         <nav>
             <div class="nav-text">
@@ -97,7 +103,7 @@
                 <button class="user_btn"><i class="fas fa-user"></i></button>
             </div>
             <div class="nav-lang-t">
-                <a href="#"><span class="sp sp-korean"><span class="blind">한국어</span></span></a>
+                <a href="#" class="active"><span class="sp sp-korean"><span class="blind">한국어</span></span></a>
                 <a href="#"><span class="sp sp-english"><span class="blind">영어</span></span></a>
                 <a href="#"><span class="sp sp-japanese"><span class="blind">일본어</span></span></a>
                 <a href="#"><span class="sp sp-chinese"><span class="blind">중국어</span></span></a>
@@ -143,6 +149,19 @@
                     <video id="video" src="./img/2019_muju_firefly.mp4" autoplay muted loop><source src="source/movie.mp4" type="video/mp4" ></video>
                     <button><i class="far fa-pause-circle"></i></button>
                 </div>
+            </div>
+                <!-- 광고 팝업 -->
+            <div class="ad-popup">
+                <button id="btn-ad-close"><i class="fas fa-times"></i></button>
+                <div>
+                    <a href="#">
+
+                        <img src="img/ad1.PNG" alt="무주반디여행권">
+                    </a>
+                </div>
+                <form action="">
+                    <label><input type="checkbox">오늘은 더 이상 보지 않습니다.</label>
+                </form>
             </div>
         </article>
         <!-- 축제 서비스 & 공지사항 등 안내 -->

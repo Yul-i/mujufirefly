@@ -3,7 +3,9 @@
 /* sprites ========================================================== */
 
 .sp{display: inline-block; background-image: url(../img/sprite-pc.png); background-repeat: no-repeat;}
-
+/* logo */
+.sp-black-logo{width: 220px; height: 80px; background-position: -180px -360px;}
+.sp-white-logo{width: 220px; height: 80px; background-position: -180px -440px;}
 /* service icon- normal */
 .sp-ticket{width: 90px; height: 90px; background-position: 0px 0px;}
 .sp-route{width: 90px; height: 90px; background-position: -90px 0px;}
@@ -32,37 +34,6 @@
 .sp-firebugright{width: 80px; height: 80px; background-position: -80px -360px;}
 .sp-noticelogo{width: 210px; height: 80px; background-position: -180px -270px;}
 
-/*
-
-미디어쿼리
-1280px 따로 제작할 것
-
-메뉴 width100%로 적용해서
-hover 배경 나타나게 하기
-모바일 메뉴 변경 생각하기
-
-팝업 페이지 제작
-(로그인 페이지(bg 투명도 들어간 검정 배경화, 유저 페이지)
-
-슬라이드 플러그인 넣기
-1페이지 3단,
-낮/밤 나눠서 탭으로 할건지 
-낮/밤 상하 배치해서 그대로 갈건지
-
-동영상 태블릿 모드때 어떻게 배치할지
-생각해보기
-위에 영상 밑에 가로로 긴 포스터 넣어도 되긴 함
-
-js 효과 넣을 것
-
-1. 상단 공지 마우스 휠 내릴시 바로 사라지고/나타나게 하기
-2. 홍보 페이지 반딧불 불빛 효과 나타나게 하기
-범위(acticle1~2)
-3. 축제 프로그램 슬라이드 효과/ 탭효과
-4. 축제 서비스 마우스 hover시 아이콘 커지거나, 밝은 색 아이콘으로 변경되게 하기
-5. SNS 마우스 클릭시 팝업 뜨며, 인스타그램 이동되는 링크를 뜨게 할까 생각 좀 해봐야겠음
-
-*/
 
 /* firefly */
 #firefly1, #firefly2{
@@ -130,12 +101,18 @@ header h1{
     z-index: 100;
     display: inline-block;
     padding-left : 40px;
-    line-height: 160px;
-    width: 150px;
+    line-height: 180px;
 }
 
-header h1 img{width: 100%;}
-
+header h1 a{
+    display: block;
+}
+header h1 a span.sp{
+    transform: scale(0.8);
+}
+header h1 a span.m-logo{
+    display: none;
+}
 header .menu-btn{
     display: none;
     position: absolute;
@@ -452,6 +429,7 @@ nav .nav-text p span{
     color: #000;
     margin-left: 13px;
 }
+
 /* article1 main */
 
 .article1{
@@ -519,6 +497,36 @@ nav .nav-text p span{
 }
 .article1 .mobile-scroll{
     display: none;
+}
+
+/* 광고 팝업 */
+.ad-popup{
+    z-index: 200;
+    position: fixed;
+    top: 140px;
+    right: 10px;
+    width: 270px;
+    background: #fff;
+    box-shadow: -7px 11px 5px 3px rgba(0,0,0,0.5);
+}
+.ad-popup #btn-ad-close{
+    position: relative;
+    left: 235px;
+    top: 5px;
+}
+.ad-popup #btn-ad-close i{
+    font-size: 2em;
+}
+.ad-popup>div{
+    padding: 10px 20px;
+    height: 400px;
+}
+.ad-popup>div a img{
+    height: 100%;
+}
+.ad-popup form{
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 /* article2 */
@@ -765,6 +773,7 @@ nav .nav-text p span{
 
 .article3 h2 span{
     margin: 0 20px;
+    transform: scale(0.6);
 }
 
 .program-am, .program-pm{

@@ -55,10 +55,16 @@ nav.active{
 
 header h1 {
     display: block;
+    padding: 0;
     line-height: 125px;
-    width: 150px;
     left: 50%;
     transform: translateX(-50%);
+}
+header h1 a span.m-logo{
+    display: block;
+}
+header h1 a span.m-logo+span{
+    display: none;
 }
 header .m-user-btn{
     display: block;
@@ -173,6 +179,12 @@ header .m-user-btn i{
     background: #e1e1e1;
     opacity: 0.5;
 }
+.nav-lang-t a.active{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
 
 /* 메인 홍보 */
 .article1 .main-post {
@@ -192,6 +204,9 @@ header .m-user-btn i{
 }
 .article1 .main-video button i{
     font-size: 6em;
+}
+.ad-popup{
+    display: none;
 }
 /* article2 */
 .article2 .center {

@@ -65,16 +65,32 @@ $(function() {
             $('body').addClass('nav-open');
             $(this).parents('header').find('.gnb-bg').stop(true).slideDown();
             player.pause();
+            $('header h1 span').removeClass('sp-white-logo').addClass('sp-black-logo');
             $('.article1 button i').removeClass('fa-pause-circle').addClass('fa-play-circle');
           },
           mouseleave:function () { 
             $('body').removeClass();
             $(this).parents('header').find('.gnb-bg').stop(true).slideUp();
+            $('header h1 span').removeClass('sp-black-logo').addClass('sp-white-logo');
           }
-        })       
+        })
+        // // 낼 수정하세용
+        // $(window).scroll(function() {
+        //   var resetScroll=0;
+        //   var nowScroll=$(document).scrollTop();
+        //   if (resetScroll<nowScroll) {
+        //     $('aside.top-notice').hide();
+        //     resetScroll=nowScroll;
+        //     if (resetScroll<nowScroll) {
+        //       $('aside.top-notice').show();
+        //     }
+        //   }
+          
+        // })
       }
       
-      if(winWidth>750){//태블릿
+      if(winWidth>750){//태블릿 
+        // $('header h1 span').removeClass('sp-white-logo').addClass('sp-black-logo');
         programSwiper = new Swiper('.program-am',programSwiperOption);
       }
     }).resize();
@@ -118,6 +134,29 @@ $(function() {
         $('.user_btn, header .m-user-btn').removeClass('active');
         $('.user-login-popup').hide();
       })
+
+      // 광고 팝업창
+
+
+      var x_styleLeft, y_styleTop, x_accept, y_accept;
+      // 팝업 움직이기
+      $('.ad-popup').mousedown(function(event) {
+          x_styleLeft = event.clientX - $('.ad-popup').offset().left;
+          y_styleTop = event.clientY - $('.ad-popup').offset().top;
+          $(document).mousemove(function(event){ 
+          x_accept = event.clientX - x_styleLeft;
+          y_accept = event.clientY - y_styleTop;
+          $('.ad-popup').css("left",x_accept+"px"); 
+          $('.ad-popup').css("top",y_accept+"px"); 
+          });
+        });
+      }).mouseup(function(){
+        $(this).off('mousemove');
+        $('.ad-popup').css('cursor', 'move')
+        
+      $('#btn-ad-close').click(function() {
+          $(this).parent().hide();
+      })
       
 
       // 언어 팝업창 열기
@@ -125,7 +164,7 @@ $(function() {
         $(this).find('ul').slideToggle();
       })
 
-      // 언어 변경하기
+      // 언어 변경하기-pc
       $('.lang ul li a').click(function(e){
         e.stopPropagation();
         var langSelect=$(this).text();
@@ -133,6 +172,12 @@ $(function() {
         $('.lang>a>span:nth-child(1) i').attr('class',langClass);
         $('.lang>a>span:nth-child(2)').text(langSelect);
         $('.lang ul').slideUp();
+      })
+      // 언어 변경하기-mobile
+      $('.nav-lang-t a').click(function(e) {
+        e.stopPropagation();
+        $('.nav-lang-t a').removeClass();
+        $(this).addClass('active');
       })
 
       // 메뉴 슬라이드(태블릿, 모바일)
