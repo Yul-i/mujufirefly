@@ -74,19 +74,6 @@ $(function() {
             $('header h1 span').removeClass('sp-black-logo').addClass('sp-white-logo');
           }
         })
-        // // 낼 수정하세용
-        // $(window).scroll(function() {
-        //   var resetScroll=0;
-        //   var nowScroll=$(document).scrollTop();
-        //   if (resetScroll<nowScroll) {
-        //     $('aside.top-notice').hide();
-        //     resetScroll=nowScroll;
-        //     if (resetScroll<nowScroll) {
-        //       $('aside.top-notice').show();
-        //     }
-        //   }
-          
-        // })
       }
       
       if(winWidth>750){//태블릿 
