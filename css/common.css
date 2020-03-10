@@ -59,7 +59,7 @@
 }
 .top-notice .center h2{
     float: left;
-    display: inline-block;
+    /* display: inline-block; */
     margin: 10px 0 0 50px;
 }
 .top-notice p{
@@ -552,7 +552,7 @@ nav .nav-text p span{
 .article2 .notice{
     position: absolute;
     overflow: hidden;
-    width: 100%; height: 50px;
+    width: 100%;
     top: 25px;
 }
 .article2 .notice>span:first-child{
@@ -583,8 +583,6 @@ nav .nav-text p span{
     position: absolute;
     left : 195px;
     top: 0px;
-    overflow: hidden;
-    height: 50px;
     width: 600px;
 }
 

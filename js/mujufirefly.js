@@ -59,6 +59,7 @@ $(function() {
       }
 
       if(winWidth>=1200){//pc
+        $('header h1 span').eq(1).removeClass('sp-black-logo').addClass('sp-white-logo');
         // nav의 네비게이션에 hover시 변경되는 점
         $('.gnb').on({
           mouseenter:function () { 
@@ -71,15 +72,17 @@ $(function() {
           mouseleave:function () { 
             $('body').removeClass();
             $(this).parents('header').find('.gnb-bg').stop(true).slideUp();
-            $('header h1 span').removeClass('sp-black-logo').addClass('sp-white-logo');
+            $('header h1 span').eq(1).removeClass('sp-black-logo').addClass('sp-white-logo');
           }
         })
+
       }
       
       if(winWidth>750){//태블릿 
         // $('header h1 span').removeClass('sp-white-logo').addClass('sp-black-logo');
         programSwiper = new Swiper('.program-am',programSwiperOption);
       }
+      
     }).resize();
     
       // 공지 슬라이드
@@ -136,11 +139,11 @@ $(function() {
           $('.ad-popup').css("left",x_accept+"px"); 
           $('.ad-popup').css("top",y_accept+"px"); 
           });
-        });
-      }).mouseup(function(){
+        }).mouseup(function(){
         $(this).off('mousemove');
-        $('.ad-popup').css('cursor', 'move')
-        
+        $('.ad-popup').css('cursor', 'move');
+      });
+
       $('#btn-ad-close').click(function() {
           $(this).parent().hide();
       })
@@ -171,7 +174,7 @@ $(function() {
       $('.menu-btn').click(function(){
         var btnText=$(this).find('i').text();
         if(btnText=='menu'){
-          $(this).addClass('active');
+          // $(this).addClass('active');
           $(this).nextAll('nav').addClass('active');
           $(this).find('i').text('clear');
         }else if (btnText=='clear') {
