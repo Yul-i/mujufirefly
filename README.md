@@ -8,12 +8,11 @@
 * WebPage: https://yul-i.github.io/mujufirefly/
 * InfoPage : https://yul-i.github.io/portfolio1.html
 ---
-### 3)제작 과정 및 포트폴리오
-* 사이트분석&벤치마킹 : https://drive.google.com/file/d/183oBicuGwXKPXbClIQoujSkt2PC4QScc/view?usp=sharing
-* 화면설계서 : https://drive.google.com/file/d/1nH70tYnk5Kowg_FvHMNoxPVsHc3rC_pC/view
+### 3)제작 과정 및 포트폴리오 
+* [사이트분석&벤치마킹.pdf](https://drive.google.com/file/d/183oBicuGwXKPXbClIQoujSkt2PC4QScc/view?usp=sharing "사이트분석&벤치마킹")
+* [화면설계서.pdf](https://drive.google.com/file/d/1nH70tYnk5Kowg_FvHMNoxPVsHc3rC_pC/view "화면설계서")
 * 스타일가이드 : 하단 7)StyleGuide 참조
-* 기타 작업 문서(아이디어스케치, 마인드맵…) : https://drive.google.com/drive/folders/1IQCxYtciqnVeeqCxw7wWkxJ11vFl6RiL
-
+* 기타 작업 문서(아이디어스케치, 마인드맵…) : [작업문서 폴더(GoogleDrive)](https://drive.google.com/drive/folders/1IQCxYtciqnVeeqCxw7wWkxJ11vFl6RiL "무주드라이브")
 ### 4)사용된 기술
 * PC/Tablet/Mobile 반응형 웹 사이트
 * ![Html5](https://img.shields.io/badge/HTML5-red) ![CSS3](https://img.shields.io/badge/CSS3-blue) ![javascript](https://img.shields.io/badge/JavaScript-yellow) ![jquery](https://img.shields.io/badge/jQuery-orange)
