@@ -1,4 +1,4 @@
-@charset "UFT-8";
+@charset "UTF-8";
 /* 300:light, 400:regular,500:medium,700:bold,900:black */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean');
 @import url(reset.css);
