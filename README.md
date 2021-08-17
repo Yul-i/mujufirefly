@@ -2,7 +2,7 @@
 # 2019 무주반딧불축제 ![rogo](https://yul-i.github.io/images/logo.png) 
 
 ### 1) 프로젝트 정보
-* 충청남도 무주군 2019 무주반딧불축제 리뉴얼 웹 사이트
+* 전라북도 무주군 2019 무주반딧불축제 리뉴얼 웹 사이트
 
 ### 2)URL
 * WebPage: https://yul-i.github.io/mujufirefly/
